@@ -7,7 +7,7 @@
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)](https://vitejs.dev/)
 
-![habitSync](client/src/assets/hero.png)
+![habitSync](client/src/assets/pet/tinyPup1.png)
 
 ## Overview
 
