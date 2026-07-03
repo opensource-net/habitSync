@@ -18,7 +18,7 @@ const clientIndexPath = path.join(clientDistPath, 'index.html');
 
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'http://localhost:3434'], // Vite dev server
+    origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3434'], // Vite dev server
     credentials: true,
   }),
 );
