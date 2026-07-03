@@ -1,0 +1,85 @@
+# --- Dependencies ---
+node_modules/
+bower_components/
+jspm_packages/
+
+# --- Build Outputs ---
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+target/
+bin/
+obj/
+
+# --- Environment and Secrets ---
+.env
+.env.*
+!.env.example
+secrets.json
+*.pem
+*.key
+*.cert
+
+# --- IDE and Editor Folders ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Version Control ---
+.git/
+.svn/
+.hg/
+
+# --- Logs and Diagnostics ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+.eslintcache
+
+# --- Documentation & Metadata ---
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+LICENSE
+*.md
+
+# Explicitly keep files
+!claude.md        
+!README.md
+
+# --- Large Media and Assets ---
+public/assets/large-videos/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.gif
+*.woff
+*.woff2
+*.ttf
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.zip
+*.tar.gz
+*.pdf
+
+# --- Documentation Artifacts ---
+site/
+_site/
+docs/_build/
+
+# --- Test Coverage & Build Reports ---
+coverage/
+.nyc_output/
+*.lcov

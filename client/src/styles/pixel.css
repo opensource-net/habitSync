@@ -1,0 +1,261 @@
+.pixel-page {
+  min-height: 100vh;
+  background: #f7f1df;
+  color: #1f1a17;
+  padding: 24px;
+}
+
+.pixel-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.pixel-title {
+  margin: 0 0 8px;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.pixel-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #4f5563;
+}
+
+.pixel-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  align-items: start;
+  margin-top: 24px;
+}
+
+.pixel-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pixel-panel {
+  background: #fffaf0;
+  border: 4px solid #6c63ff;
+  box-shadow: 6px 6px 0 #2f2a7c;
+  padding: 16px;
+}
+
+.pixel-panel-title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pixel-divider {
+  height: 3px;
+  background: #6c63ff;
+  margin: 10px 0 14px;
+}
+
+.pixel-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pixel-input,
+.pixel-select {
+  width: 100%;
+  background: #fff;
+  border: 4px solid #6c63ff;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 16px;
+  color: #1f1a17;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.pixel-input:focus,
+.pixel-select:focus {
+  box-shadow: 4px 4px 0 #2f2a7c;
+}
+
+.pixel-form-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 140px;
+  gap: 14px;
+  align-items: end;
+}
+
+.pixel-button {
+  background: #008fa3;
+  color: white;
+  border: 4px solid #006c7a;
+  padding: 12px 18px;
+  font: inherit;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #124852;
+}
+
+.pixel-button:hover {
+  transform: translate(-1px, -1px);
+}
+
+.pixel-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #124852;
+}
+
+.pixel-button-danger {
+  background: #d62839;
+  border-color: #9f1624;
+  box-shadow: 4px 4px 0 #5f0f17;
+}
+
+.pixel-button-secondary {
+  background: #f2f3f5;
+  color: #1f1a17;
+  border-color: #6c63ff;
+  box-shadow: 4px 4px 0 #2f2a7c;
+}
+
+.pixel-quest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pixel-quest-card {
+  background: #fffef7;
+  border: 4px solid #198754;
+  box-shadow: 6px 6px 0 #0f4f31;
+  padding: 14px 16px;
+}
+
+.pixel-quest-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.pixel-quest-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pixel-check {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #198754;
+  background: #198754;
+  color: #fff;
+  font-size: 14px;
+}
+
+.pixel-check.empty {
+  background: #fff;
+  color: transparent;
+}
+
+.pixel-chip {
+  display: inline-block;
+  border: 3px solid #6c63ff;
+  padding: 4px 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.pixel-chip-xp {
+  border-color: #d97706;
+  color: #d97706;
+}
+
+.pixel-chip-done {
+  border-color: #198754;
+  color: #198754;
+}
+
+.pixel-quest-title {
+  font-size: 20px;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+.pixel-quest-goal {
+  margin: 10px 0 0 40px;
+  color: #596273;
+}
+
+.pixel-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pixel-pet-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.pixel-pet-emoji {
+  font-size: 64px;
+  margin: 0;
+}
+
+.pixel-progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #6c63ff;
+  overflow: hidden;
+}
+
+.pixel-progress-fill {
+  height: 100%;
+  background: #00a8c6;
+}
+
+.pixel-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pixel-stat-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 2px solid #d8d4ff;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .pixel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pixel-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pixel-quest-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

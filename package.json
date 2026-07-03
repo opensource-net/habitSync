@@ -1,0 +1,36 @@
+{
+  "name": "habitsync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "habit tracker web-app",
+  "workspaces": [
+    "packages/*",
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev --workspace client",
+    "dev:server": "npm run dev --workspace server",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PTRI-20-Team-Pikachu/habitSync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PTRI-20-Team-Pikachu/habitSync/issues"
+  },
+  "homepage": "https://github.com/PTRI-20-Team-Pikachu/habitSync#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.0",
+    "postgres": "^3.4.9"
+  }
+}
